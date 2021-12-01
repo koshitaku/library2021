@@ -10,7 +10,7 @@ $host = "us-cdbr-east-04.cleardb.com";
 $db = "heroku_1bdb8dde0683137";
 $user = "b9cf8537cbb86a";
 $pass = "13f5bfba";
-$charset = 'utf8mb4'
+$charset = 'utf8'
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
