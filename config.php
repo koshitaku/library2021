@@ -8,14 +8,14 @@ $DBHOST = "us-cdbr-east-04.cleardb.com";
 $DBPORT = "3306";
 $DBNAME = "heroku_1bdb8dde0683137";
 $DBUSER = "b9cf8537cbb86a";
-$DBPASS = "13f5bfba@us-cdbr-east-04";
-//2021/3/17 pg_connect‚ÉC³ 
+$DBPASS = "13f5bfba";
+//2021/3/17 pg_connectâ€šÃ‰ÂCÂÂ³ 
 $connStr = "host=$DBHOST port=$DBPORT dbname=$DBNAME user=$DBUSER password=$DBPASS";
 $conn = pg_connect($connStr) or die("can't connect db");
 //var_dump($conn);
 
 /* try {$conn = new PDO("pgsql:host=$DBHOST;port=$DBPORT;dbname=$DBNAME;user=$DBUSER;password=$DBPASS");}
 catch (PDOException $e) {
-	echo 'DBÚ‘±ƒGƒ‰[F ' . $e->getMessage();
+	echo 'DBÂÃšâ€˜Â±Æ’GÆ’â€°Â[ÂF ' . $e->getMessage();
 } */
 ?>
