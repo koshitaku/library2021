@@ -1,0 +1,177 @@
+
+/* 
+    Created on : 2017/10/11, 0:46:23
+    Author     : nhatnv950
+*/
+
+body {
+    font-family: Tahoma;
+    font-size: 13px;
+    width: 1000px;
+    margin: 0px auto;
+    background: #ccffcc;
+}
+
+#menu_top {
+    background: #ffcccc;
+    height: 40px;
+}
+#slider  {
+    margin: 0px auto;
+    width: 998px;
+    height: 300px;
+    border: 1px solid#6633ff;
+    position: relative;
+}
+.slide  {
+
+    width: 998px;
+    height: 300px;
+}
+#prev  {
+    text-transform: uppercase;
+    top: 130px;
+    left: 0px;
+    position: absolute;
+}
+#next {
+    text-transform: uppercase;
+    top: 130px;
+    right: 0px;
+    position: absolute;
+}
+
+#main #left {
+    width: 700px;
+    float: left;
+    min-height: 400px;
+}
+#main #right {
+    width: 300px;
+    background: #006666;
+    float: left;
+    min-height: 400px;
+
+
+}
+#footer {
+
+    width: 1000px;
+    height: 60px;
+    text-align: center;
+    background: #006666;    
+    color: #fff;
+    clear: left;
+    line-height: 60px;
+
+}
+#menu_top ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#menu_top ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+    width: 200px;
+    font-size: 20px;
+    text-align: center; 
+    border-bottom: 1px solid#9999ff;
+
+} 
+
+#menu_top li:hover #submenu {
+    display: block; 
+}
+
+#menu_top ul li a {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 20px 0px 20px;
+    border-right:3px solid #f1f1f1; 
+
+}
+#menu_top ul li a:hover {
+    background: #99ccff;    
+}
+
+#menu_top ul li a.active{
+    background: #99ccff;
+}
+#banner img {
+    width: 1000px;
+}
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+}
+#main #left ul li {
+    list-style: none;
+    clear: left;
+    border-bottom:  1px solid#cccc00 ;
+    float: left;
+    margin-bottom: 15px;
+}
+#main #left ul li img {
+    float: left; 
+    margin-right: 10px;
+    margin-bottom: 15px;
+
+}
+#main #left ul li h2 {
+    font-size: 15px;
+    margin-top: 0px;
+
+}
+#main {
+    margin-top: 10px;
+}
+#main #right .menu_right ul {
+    margin: 0px;
+    padding: 0px;
+}
+#main #right .menu_right ul li {
+    list-style: none;
+}
+#main #right .menu_right ul li  a{
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+    text-indent: 15px;
+    color: #fff;
+
+}
+#main #right .menu_right ul li  a:hover{
+
+    color: black;
+
+}
+#main #right .menu_right h3 {
+    background: #0033cc url(images/icon.png) no-repeat 3px;
+    height: 40px;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    color: #ffffff; 
+
+}
+#main #right .menu_right img {
+    width: 300px;
+    margin-bottom:  -3px;
+
+}
+.jpg  {
+    text-decoration: none;
+
+}
+.jpg h2:hover {
+    color: blue;
+
+}
+

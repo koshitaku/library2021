@@ -1,0 +1,226 @@
+
+body {
+    background: #d3eaef;
+    width: 100%;
+
+}
+
+.content {
+    background-size: 900px;
+    height:700px;
+    width: 785px;
+    float:left;
+    background-repeat:no-repeat;
+}
+.menu1 {    
+    margin-left: 90px;
+    margin-top: -13px;
+    padding: 0px 19px 0px 110px;
+    line-height: 53px;
+    float:left;
+
+
+}
+.menu1 li{
+    list-style:none;
+    border: 1px solid green;	
+    border-width: thin;
+    background-color: #e1e2e3;
+}
+.menu1 li:hover{
+    background:#CDE2CD;
+    width: 172px;
+    border-radius: 10px 10px 10px 10px;
+}
+.content li {
+    width: 15%;
+    padding: 40px 70px 0px 60px;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFFFCC;
+    border-style:inset;
+    background: #FFDED2;
+}
+
+.tooltip{
+    position:relative;
+    display:inline-block;
+    border-bottom: 1px solid #DDD;
+    text-align:center;
+
+}
+.tooltip_text{
+    background: url(./images/tt-bg.jpg);
+    background-size:410px 600px;
+    z-index: 100;
+}
+.tooltip_text{
+    padding: 100px 50px 0px 50px;
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    margin-top:5px;
+    right:-410px;
+    top:-150px;
+    width:300px;
+    height:0px;
+    border-radius:4px;
+
+    color:black;
+    transition:height is, opacity is;
+
+}
+.tooltip:hover .tooltip_text{
+    visibility:visible;
+    height:500px;
+    opacity:1;
+}
+.tooltip_text b{
+    color:blue;
+}
+
+.scroll {
+
+    float:left;
+
+}
+.scroll b {
+    color:blue;
+
+}
+/*:::::::::::::*/
+#slider  {
+    margin: 0px;
+    padding: 0px 0px 0px 222px;
+    width: 1070px;
+    height: 232px;
+    border: 0px solid#6633ff;
+    position: relative;
+
+}
+.slide  {
+
+    width: 1161px;
+    height: 250px;
+}
+#prev  {
+    text-transform: uppercase;
+    top: 130px;
+    left: 222px;
+    position: absolute;
+}
+#next {
+    text-transform: uppercase;
+    top: 130px;
+    right: -90px;
+    position: absolute;
+}
+#footer {
+    width: 1170px;
+    background:#344b50;     
+    font-weight: bold;
+    height: 70px;
+    line-height:    30px;
+    position: absolute;
+    bottom: -1000px;
+    text-align: center;
+    left: 224px;
+
+}
+.backtotop {
+    display:none;
+    bottom: 16%; right: 90px; cursor: pointer;  position: fixed; z-index: 1000;
+}
+.backtotop div {
+    border:3px solid #9999ff; 
+    border-radius:40px; 
+    padding:11px 12.5px; 
+    box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.3)  
+}
+.backtotop img {
+    width: 35px; 
+    height:35px;
+}
+.form {
+    margin-top: -55px;
+    margin-left: 32px;
+}
+.form img {
+    width: 130px; 
+    height:50px;
+}
+.vtt {
+    padding-left: 805px;
+}
+
+/* @media screen
+  and (min-device-width: 200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+} */
+
+@media screen and (max-width:600px){
+	body {
+		margin: 0px;
+		padding:0;
+		background: #d3eaef;
+		position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+    #slider {
+    margin: 0px;
+    padding: 0px;
+    position:absolute;
+    width:100%;
+    height:32px;
+    top:0;
+    left:0;
+}
+    .slide {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+    #prev {
+    text-transform: uppercase;
+	position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+    #next {
+    text-transform: uppercase;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:92%;
+}
+    .vtt {
+	margin:0;
+	padding:0;
+    position:absolute;
+    width:0;
+    height:0;
+    top:5%;
+    left:5%;
+}
+
+}
+
+/* 
+ ----------- Retina Screens ----------- 
+@media screen
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+}*/
+
+

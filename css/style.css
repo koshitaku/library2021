@@ -1,0 +1,81 @@
+body {
+    position: relative;
+    margin: 0;
+}
+a{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+body,html {
+    height: 100%;
+}
+.wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/library1.jpg") no-repeat center/cover;
+}.wrap:nth-child(2) {
+    background-image: url("../images/library2.jpg");
+}.wrap:nth-child(3) {
+    background-image: url("../images/library3.jpg");
+}.wrap:nth-child(4) {
+    background-image: url("../images/library4.jpg");
+}
+.nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 76%;
+    height: 31%;
+    transform: translateX(-50%) translateY(-50%); /*軸を変える*/
+    overflow: hidden;
+
+}
+.list{
+    float: left;
+    width: 9%;
+    height: 100%;
+    background: url("../images/library1.jpg") no-repeat center/cover;
+}.list:nth-child(2) {
+    background-image: url("../images/library2.jpg");
+}.list:nth-child(3) {
+    background-image: url("../images/library3.jpg");
+}.list:nth-child(4) {
+    width: 70%;
+    background-image: url("../images/library4.jpg");
+}
+.list div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    line-height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.list div a{
+    position: absolute;
+    display: inline-block;
+    width: 2%;
+    top: 31%;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*文字大きさ　Web*/
+html {font-size: 62.5%!important; /* 10÷16=62.5% */}
+@media only screen and (min-width: 481px){html {font-size: 94%!important; /* 15.04÷16=94% */}}
+@media only screen and (min-width: 561px){html {font-size: 109%!important; /* 17.44÷16=109% */}}
+@media only screen and (min-width: 641px){html { font-size: 125%!important; /* 20÷16=125% */ }}
+/*app*/
+@media only screen and (min-width: 320px){html {font-size: 62.5%!important;}}
+@media only screen and (min-width: 360px){html {font-size: 72.5%!important;}}
+@media only screen and (min-width: 400px){html {font-size: 82.5%!important;}}
+@media only screen and (min-width: 480px){html {font-size: 94%!important;}}
