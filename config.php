@@ -3,18 +3,19 @@ error_reporting(0);
 ob_start();
 session_start();
 date_default_timezone_set('Asia/Tokyo');
-$DBHOST = "us-cdbr-east-04.cleardb.com";
-$DBPORT = "3306";
-$DBNAME = "heroku_b718dc87871f12f";
-$DBUSER = "b65770169c839b";
-$DBPASS = "16639ad0";
-//2021/3/17 pg_connectに修正 
-$connStr = "host=$DBHOST port=$DBPORT dbname=$DBNAME user=$DBUSER password=$DBPASS";
-$conn = pg_connect($connStr) or die("can't connect db");
-//var_dump($conn);
 
-/* try {$conn = new PDO("pgsql:host=$DBHOST;port=$DBPORT;dbname=$DBNAME;user=$DBUSER;password=$DBPASS");}
-catch (PDOException $e) {
-	echo 'DB接続エラー： ' . $e->getMessage();
-} */
+
+
+
+
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("us-cdbr-east-04.cleardb.com"));
+$cleardb_server = "us-cdbr-east-04.cleardb.com";
+$cleardb_username = "b65770169c839b";
+$cleardb_password = "16639ad0";
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
