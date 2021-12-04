@@ -4,21 +4,17 @@ ob_start();
 session_start();
 date_default_timezone_set('Asia/Tokyo');
 
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
-function dbConnect(){
-  $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
-  $db['dbname'] = ltrim($db['path'], '/');
-  $dsn = "mysql:host={$db['host']};dbname={$db['dbname']};charset=utf8";
-  $user = $db['user'];
-  $password = $db['pass'];
-  $options = array(
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-    PDO::MYSQL_ATTR_USE_BUFFERED_QUERY =>true,
-  );
-  $dbh = new PDO($dsn,$user,$password,$options);
-  return $dbh;
-}
 
 
 
